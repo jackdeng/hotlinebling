@@ -1,8 +1,28 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background-image: url("../images/tile.png");
 }
 
 a {
   color: #00B7FF;
+}
+
+.front {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.hidden {
+    display: none;
 }

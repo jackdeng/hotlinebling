@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+        <script src="javascripts/jquery.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                function showHead() {
+                    function randHead() {
+                        var seed = Math.random();
+                        var num = Math.floor(seed * 4 + 1);
+                        return num;
+                    }
+
+                    var head = ".head" + randHead();
+                    $(head).fadeIn(2000).fadeOut(2000);
+                }
+                $(".front").click(function(){
+                    showHead();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="background">
+            <embed src="/audio/hotline.mp3" width="180" height="90" loop="true" autostart="false" hidden="true" />
+
+            <div class="button">
+                <div class="front centered animated shake">
+                    <img src="../images/phone.png"/>
+                </div>
+                <div class="drake  head1 hidden">
+                    <img src="../images/head1.png"/>
+                </div>
+                <div class="drake  head2 hidden">
+                    <img src="../images/head2.png"/>
+                </div>
+                <div class="drake  head3 hidden">
+                    <img src="../images/head3.png"/>
+                </div>
+                <div class="drake  head4 hidden">
+                    <img src="../images/head4.png"/>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
